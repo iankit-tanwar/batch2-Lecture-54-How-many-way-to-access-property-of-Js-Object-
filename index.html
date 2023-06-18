@@ -4,20 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>batch2 Lecture 54 How many way to access property of Js Object?</title>
+    <title>batch2 Lecture 54 Js Object property</title>
     <style>
 
     </style>
 
     <script>
 
+        // I can write the JS code before the closing of head tag
+
     </script>
 </head>
 
 <body>
+    <h1>Js Data Types</h1>
+    <ul>
+        <li>Js Object</li>
+    </ul>
+
+    <h1 id="h1"></h1>
 
 
     <script>
+        //I can write the JS code before the closing of body tag
+
+        // how many ways to acces Js objects?
+        // 3 Ways
+        let studend1 = {
+            //Property : Value
+            name: 'Praveen',
+            surname: 'Yadav'
+        }
+        // 1 way Object.property
+        console.log(studend1.name + ' ' + studend1.surname);
+
+
+        var _student2 = {
+            // property : value
+            name: 'Maya',
+            surname: 'Shankar'
+        }
+
+        // 2nd way to access
+        // object["property"]
+
+        window.alert(_student2["name"] + ' ' + _student2["surname"]);
+
+
+
+        const $student3 = {
+            name: 'Ankit',
+            surname: 'Tanwar'
+        }
+        //3rd way to accessing Js Object
+        //object[expression]
+        let x = "name";
+        var y = "surname";
+
+        let z = document.getElementById("h1")
+
+           z.innerHTML = $student3[x] + ' ' + $student3[y];
+
+           z.style.color = "red";
+
+
 
     </script>
 </body>
